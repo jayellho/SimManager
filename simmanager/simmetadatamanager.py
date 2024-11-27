@@ -104,7 +104,7 @@ class SimMetadataManager:
         This does the relevant drudgery of creating a recursive patch by running a
         shell script
         """
-        self.check_no_untracked()
+        # self.check_no_untracked()
         with _changed_to_temp_dir(self.repopath):
             stdout_, stderr_ = _get_output(['subpatch.sh', 'make'])
 
